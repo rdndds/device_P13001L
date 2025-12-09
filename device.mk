@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/advan/T812
+DEVICE_PATH := device/itel/P13001L
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
 # A/B
@@ -164,7 +164,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.advan
+    android.hardware.lights-service.itel
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -174,7 +174,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     FrameworksResCommon \
-    FrameworksResOverlayT812 \
+    FrameworksResOverlayP13001L \
     SystemUIResCommon \
     TelephonyResCommon
 
@@ -223,7 +223,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek
 
-$(call soong_config_set,mediatek_power,powerhal_ext,//$(LOCAL_PATH):libpowermode-ext-advan)
+$(call soong_config_set,mediatek_power,powerhal_ext,//$(LOCAL_PATH):libpowermode-ext-itel)
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/perf,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -272,4 +272,4 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/advan/T812/T812-vendor.mk)
+$(call inherit-product, vendor/itel/P13001L/P13001L-vendor.mk)

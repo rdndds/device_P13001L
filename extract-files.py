@@ -18,7 +18,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/advan/T812',
+    'device/itel/P13001L',
     'hardware/mediatek',
 ]
 
@@ -81,7 +81,7 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libsysenv.so',
     ) : blob_fixup()
         .add_needed('libbase_shim.so'),
-    # From T812
+    # From P13001L
     'vendor/bin/hw/android.hardware.security.keymint-service.trustkernel': blob_fixup()
         .replace_needed('android.hardware.security.keymint-V1-ndk_platform.so', 'android.hardware.security.keymint-V4-ndk.so')
         .replace_needed('android.hardware.security.sharedsecret-V1-ndk_platform.so', 'android.hardware.security.sharedsecret-V1-ndk.so')
@@ -105,8 +105,8 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'T812',
-    'advan',
+    'P13001L',
+    'itel',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,

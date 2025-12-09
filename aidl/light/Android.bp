@@ -13,9 +13,9 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.lights-service.advan",
-    init_rc: ["android.hardware.lights-service.advan.rc"],
-    vintf_fragments: ["android.hardware.lights-service.advan.xml"],
+    name: "android.hardware.lights-service.itel",
+    init_rc: ["android.hardware.lights-service.itel.rc"],
+    vintf_fragments: ["android.hardware.lights-service.itel.xml"],
     relative_install_path: "hw",
     shared_libs: [
         "libbase",

@@ -20,8 +20,8 @@ import os
 import sys
 from hashlib import sha1
 
-device = 'mt6789-common'
-vendor = 'advan'
+device = 'P13001L'
+vendor = 'itel'
 
 with open('proprietary-files.txt', 'r') as f:
     lines = f.read().splitlines()

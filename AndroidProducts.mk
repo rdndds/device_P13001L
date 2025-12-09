@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_T812.mk
+    $(LOCAL_DIR)/lineage_P13001L.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_P13001L-user \
+    lineage_P13001L-userdebug \
+    lineage_P13001L-eng

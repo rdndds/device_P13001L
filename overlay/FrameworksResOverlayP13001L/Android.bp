@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "FrameworksResOverlayT812",
+    name: "FrameworksResOverlayP13001L",
     vendor: true,
 }

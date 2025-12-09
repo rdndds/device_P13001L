@@ -1,5 +1,5 @@
 cc_library_static {
-    name: "libpowermode-ext-advan",
+    name: "libpowermode-ext-itel",
     vendor: true,
     srcs: [
         "power-mode.cpp",
