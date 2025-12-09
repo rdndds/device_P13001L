@@ -1,0 +1,80 @@
+//
+// Copyright (C) 2023 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "fstab.emmc",
+    src: "etc/fstab.emmc",
+    vendor: true,
+    vendor_ramdisk_available: true
+}
+
+prebuilt_etc {
+    name: "fstab.mt6789",
+    src: "etc/fstab.mt6789",
+    vendor: true,
+    vendor_ramdisk_available: true
+}
+
+prebuilt_etc {
+    name: "fstab.mt8781",
+    src: "etc/fstab.mt6789",
+    vendor: true,
+    vendor_ramdisk_available: true
+}
+
+prebuilt_etc {
+    name: "init.cgroup.rc",
+    src: "etc/init/hw/init.cgroup.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.insmod.mt6789.cfg",
+    src: "etc/init.insmod.mtk.cfg",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.insmod.mt8781.cfg",
+    src: "etc/init.insmod.mtk.cfg",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.mt6789.rc",
+    src: "etc/init/hw/init.mt6789.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.mt8781.rc",
+    src: "etc/init/hw/init.mt6789.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.mt6789.usb.rc",
+    src: "etc/init/hw/init.mt6789.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.recovery.usb.rc",
+    src: "etc/init.recovery.usb.rc",
+    recovery: true,
+    sub_dir: "init"
+}
+
+prebuilt_etc {
+    name: "ueventd.mtk.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.mtk.rc",
+    vendor: true
+}

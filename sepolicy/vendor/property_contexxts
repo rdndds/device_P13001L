@@ -1,0 +1,3 @@
+# VT
+ro.vendor.vt_hevc_support                u:object_r:vendor_mtk_vendor_vt_prop:s0
+ro.vendor.vt.mtk_thin_md_support_mode    u:object_r:vendor_mtk_vendor_vt_prop:s0

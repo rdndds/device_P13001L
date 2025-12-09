@@ -1,0 +1,4 @@
+allow hal_sensors_default hf_manager_device:chr_file rw_file_perms;
+
+r_dir_file(hal_sensors_default, mnt_vendor_file)
+rw_dir_file(hal_sensors_default, nvcfg_file)
