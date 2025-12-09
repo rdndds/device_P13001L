@@ -104,6 +104,9 @@
 # MDDP node
 /dev/mddp                 0660   system     system
 
+#add uart
+/dev/ttyS*	0666    root       root
+
 # add the read write right of ttyUSB*
 /dev/bus/usb/*     	  0660   root       usb
 /dev/ttyUSB0              0660   radio      radio
