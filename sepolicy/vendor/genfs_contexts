@@ -5,10 +5,6 @@ genfscon sysfs /devices/platform/soc/11017000.i2c/i2c-5/5-006a/power_supply    u
 genfscon sysfs /devices/platform/soc/soc:extcon_usb/extcon/extcon0/cable.0/name    u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/soc/soc:extcon_usb/extcon/extcon0/cable.1/name    u:object_r:sysfs_extcon:s0
 
-# Gestures
-genfscon proc /android_touch/GESTURE    u:object_r:proc_gestures:s0
-genfscon proc /android_touch/SMWP       u:object_r:proc_gestures:s0
-
 # Misc
 genfscon proc /midmisc_bootc      u:object_r:proc_midmisc:s0
 genfscon proc /midmisc_v_bootc    u:object_r:proc_midmisc:s0

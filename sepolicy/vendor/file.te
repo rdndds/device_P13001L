@@ -1,5 +1,2 @@
-# Gestures
-type proc_gestures, fs_type, proc_type;
-
 # Misc
 type proc_midmisc, fs_type, proc_type;
