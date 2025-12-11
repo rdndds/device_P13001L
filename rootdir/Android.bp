@@ -73,13 +73,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "ueventd.mtk.rc",
-    filename: "ueventd.rc",
-    src: "etc/ueventd.mtk.rc",
-    vendor: true
-}
-
-prebuilt_etc {
     name: "init_connectivity.rc",
     src: "etc/init/hw/init_connectivity.rc",
     sub_dir: "init/hw",
@@ -144,7 +137,7 @@ prebuilt_etc {
 prebuilt_etc {
     name: "ueventd.mt6789.rc",
     filename: "ueventd.rc",
-    src: "etc/ueventd.mtk.rc",
+    src: "etc/ueventd.mt6789.rc",
     vendor: true
 }
 
