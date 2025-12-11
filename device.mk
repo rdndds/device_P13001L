@@ -306,10 +306,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.rkp-V3-ndk.vendor:64 \
     libcppbor_external.vendor:64
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.lights-service.itel
-
 # Media
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
