@@ -491,7 +491,7 @@ vendor/etc/MNL_Config.xml
 vendor/etc/slp_conf
 
 
-# IMS - from UP1A.231005.007
+# IMS
 system_ext/bin/vtservice|eeb08595c53be9d7a69ba5b677b5604f753eab37
 system_ext/etc/init/init.vtservice.rc|50a2249906edc06059b443513db47a2ddc0490dc
 system_ext/framework/mediatek-common.jar|b4f57c8f65b92d8b65074911b626559107764bb5
@@ -533,6 +533,16 @@ vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
+
+# Charger
+system_ext/bin/kpoc_charger
+system_ext/etc/init/kpoc_charger.rc
+system_ext/lib64/libshowlogo.so
+
+# EngineerMode
+-system_ext/lib/libem_support_jni.so
+-system_ext/lib64/libem_support_jni.so
+system_ext/app/EngineerMode/EngineerMode.apk
 
 # Ladder
 vendor/lib/libladder.so

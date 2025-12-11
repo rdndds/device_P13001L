@@ -230,6 +230,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
 
+# Shim 
+PRODUCT_PACKAGES += \
+    libui_shim \
+    libui_shim.vendor \
+    libshim_sink
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-subhal-impl-1.0:64 \
