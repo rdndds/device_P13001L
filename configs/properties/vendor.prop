@@ -103,8 +103,6 @@ ro.hardware.hwcomposer=mtk_common
 ro.hardware.vulkan=mali
 ro.opengles.version=196610
 ro.vendor.build.dont_use_vabc=true
-ro.vendor.mtk_aod_support=1
-ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.smvr.p2batch.hd=4
 ro.vendor.smvr.p2batch.vga=8    
 service.sf.prime_shader_cache=0
@@ -317,9 +315,11 @@ ro.vendor.mtk_emmc_support=1
 ro.vendor.mtk_f2fs_enable=1
 ro.vendor.mtk_ufs_support=1
 
-# SoC
-ro.soc.manufacturer=Mediatek
-ro.soc.model=MT6789V/CD
+# TEE
+ro.vendor.mtk_svp_on_mtee_support=2
+ro.vendor.mtk_tk_tee_drm_support=1
+ro.vendor.mtk_trustkernel_tee_support=1
+ro.vendor.mtk_trustonic_tee_support=1
 
 # Trustkernel
 ro.hardware.gatekeeper=trustkernel
