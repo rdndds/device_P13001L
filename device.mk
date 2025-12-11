@@ -198,28 +198,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Inherit common MediaTek IMS
 $(call inherit-product, vendor/mediatek/ims/ims.mk)
 
-# Init files (common)
-PRODUCT_PACKAGES += \
-    fstab.emmc \
-    fstab.emmc.vendor_ramdisk \
-    init.cgroup.rc \
-    init.recovery.usb.rc \
-    ueventd.mtk.rc
-
-# Init files (MT6789)
-PRODUCT_PACKAGES += \
-    fstab.mt6789 \
-    fstab.mt6789.vendor_ramdisk \
-    init.insmod.mt6789.cfg \
-    init.mt6789.rc \
-    init.mt6789.usb.rc
-
-# Init files (MT8781)
+# Init files
 PRODUCT_PACKAGES += \
     fstab.mt8781 \
     fstab.mt8781.vendor_ramdisk \
-    init.insmod.mt8781.cfg \
-    init.mt8781.rc
+    init_connectivity.rc \
+    init.connectivity.common.rc \
+    init.connectivity.rc \
+    init.insmod.sh \
+    init.insmod.mt6789.cfg \
+    init.modem.rc \
+    init.mt6789.power.rc \
+    init.mt6789.rc \
+    init.mt8781.rc \
+    init.mt6789.usb.rc \
+    init.mtkgki.rc \
+    init.project.rc \
+    init.recovery.usb.rc \
+    init.sensor_2_0.rc \
+    ueventd.mt6789.rc
 
 # Kernel
 PRODUCT_COPY_FILES += \
