@@ -490,36 +490,6 @@ vendor/etc/ipsec/strongswan.conf
 vendor/etc/MNL_Config.xml
 vendor/etc/slp_conf
 
-
-# IMS
-#system_ext/bin/vtservice
-#system_ext/etc/init/init.vtservice.rc
-#system_ext/framework/mediatek-common.jar
-#system_ext/framework/mediatek-framework.jar
-#system_ext/framework/mediatek-ims-base.jar
-#system_ext/framework/mediatek-ims-common.jar
-#system_ext/framework/mediatek-ims-extension-plugin.jar
-#system_ext/framework/mediatek-telecom-common.jar
-#system_ext/framework/mediatek-telephony-base.jar
-#system_ext/framework/mediatek-telephony-common.jar
-#system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
-#system_ext/lib64/libcomutils.so
-#system_ext/lib64/libimsma.so
-#system_ext/lib64/libimsma_adapt.so
-#system_ext/lib64/libimsma_rtp.so
-#system_ext/lib64/libimsma_socketwrapper.so
-#system_ext/lib64/libmtk_vt_service.so
-#system_ext/lib64/libmtk_vt_wrapper.so
-#system_ext/lib64/libsignal.so
-#system_ext/lib64/libsink.so:system_ext/lib64/libsink-mtk.so;FIX_SONAME
-#system_ext/lib64/libsource.so
-#system_ext/lib64/libvcodec_cap.so
-#system_ext/lib64/libvcodec_capenc.so
-#system_ext/lib64/libvt_avsync.so
-#system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
-#system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
-#system_ext/priv-app/ImsService/ImsService.apk
-
 # Init
 vendor/bin/init.insmod.sh
 vendor/etc/init/hw/init.aee.rc
@@ -549,27 +519,16 @@ vendor/lib/libladder.so
 vendor/lib64/libladder.so
 
 # Media
-vendor/bin/mt6789/v3avpud.mt6789;SYMLINK=vendor/bin/v3avpud
 vendor/etc/init/v3avpud.rc
 vendor/lib/mt6789/libmtk_drvb.so;SYMLINK=vendor/lib/libmtk_drvb.so
 vendor/lib/mt6789/libvcodec_utility.so;SYMLINK=vendor/lib/libvcodec_utility.so
 vendor/lib/mt6789/libvcodec_utility_v3a.so;SYMLINK=vendor/lib/libvcodec_utility_v3a.so
-vendor/lib/mt6789/libvcodecdrv.so;SYMLINK=vendor/lib/libvcodecdrv.so
-vendor/lib/mt6789/libvcodecdrv_v3a.so;SYMLINK=vendor/lib/libvcodecdrv_v3a.so
-vendor/lib/mt6789/libvpudv3a_vcodec.so;SYMLINK=vendor/lib/libvpudv3a_vcodec.so
 vendor/lib/libbwc.so
 vendor/lib/libh264dec_customize.so
-vendor/lib/libh264dec_sa.ca7.so
-vendor/lib/libh264dec_sd.ca7.so
-vendor/lib/libh264dec_se.ca7.so
 vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
 vendor/lib/libmp3dec_mtk.so
-vendor/lib/libmp4enc_sa.ca7.so;DISABLE_CHECKELF
 vendor/lib/libvcodec_utility_plat.mt6789.so
-vendor/lib/libvcodecdrv_header_stub.so
-vendor/lib/libvp8dec_sa.ca7.so;DISABLE_CHECKELF
-vendor/lib/libvp9dec_sa.ca7.so;DISABLE_CHECKELF
 vendor/lib64/libadpcmdec_mtk.so
 vendor/lib64/libbwc.so
 vendor/lib64/libmp3dec_mtk.so
@@ -588,7 +547,6 @@ vendor/lib64/libmvpu_runtime.so
 vendor/lib64/libmvpu_runtime_pub.so
 vendor/lib64/libmvpuop_mtk_cv.so
 vendor/lib64/libmvpuop_mtk_nn.so
-vendor/lib64/libvcodecdrv_header_stub.so
 vendor/lib64/libvpu.so
 vendor/lib64/libvpu5.so
 
