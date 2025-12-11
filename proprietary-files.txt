@@ -307,11 +307,6 @@ vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 
-# Charger
-system_ext/bin/kpoc_charger
-system_ext/etc/init/kpoc_charger.rc
-system_ext/lib64/libshowlogo.so
-
 # EngineerMode
 system_ext/lib/libem_support_jni.so
 system_ext/lib64/libem_support_jni.so
