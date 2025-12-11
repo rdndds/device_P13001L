@@ -293,13 +293,6 @@ vendor/lib64/mt6789/libmnl.so;SYMLINK=vendor/lib64/libmnl.so
 vendor/lib64/librpc.so
 vendor/lib64/libviagpsrpc.so
 
-# Init
-vendor/bin/init.insmod.sh
-vendor/etc/init/hw/init.aee.rc
-vendor/etc/init/hw/init.modem.rc
-vendor/etc/init/hw/init.mtkgki.rc
-vendor/etc/init/hw/init.project.rc
-
 # Keymaster
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
