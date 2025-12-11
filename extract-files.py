@@ -29,13 +29,13 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
 
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
-    ('vendor.mediatek.hardware.videotelephony@1.0',): lib_fixup_vendor_suffix,
+    # ('vendor.mediatek.hardware.videotelephony@1.0',): lib_fixup_vendor_suffix,
 }
 
 blob_fixups: blob_fixups_user_type = {
     # From common
-    'system_ext/lib64/libimsma.so': blob_fixup()
-        .replace_needed('libsink.so', 'libsink-mtk.so'),
+    # 'system_ext/lib64/libimsma.so': blob_fixup()
+    #     .replace_needed('libsink.so', 'libsink-mtk.so'),
     'system_ext/bin/kpoc_charger': blob_fixup()
         .add_needed('libbinder_shim.so'),
     'system_ext/lib64/libsource.so': blob_fixup()
