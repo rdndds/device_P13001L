@@ -393,13 +393,6 @@ vendor/lib64/libmvpuop_mtk_cv.so
 vendor/lib64/libmvpuop_mtk_nn.so
 vendor/lib64/libvpu5.so
 
-# Mmagent
-vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
-vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
-vendor/lib64/libmmagent.so
-vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
-vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
-
 # MMS
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
 vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc
