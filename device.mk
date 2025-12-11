@@ -124,6 +124,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/mediatek-telephony-base.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/mediatek-telephony-base.xml \
     $(LOCAL_PATH)/configs/permissions/mediatek-telephony-common.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/mediatek-telephony-common.xml
 
+# Engineering Mode
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.engineermode:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.engineermode \
+
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
@@ -230,12 +234,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
 
-# Shim 
-PRODUCT_PACKAGES += \
-    libui_shim \
-    libui_shim.vendor \
-    libshim_sink
-
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-subhal-impl-1.0:64 \
@@ -243,6 +241,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
+# Shims
+PRODUCT_PACKAGES += \
+    libbinder_shim \
+    libshim_ui
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31

@@ -9,6 +9,7 @@
 #include <ui/GraphicBufferMapper.h>
 #include <ui/Rect.h>
 #include <utils/Errors.h>
+#include <android-base/unique_fd.h>
 
 using android::Rect;
 using android::status_t;
@@ -25,7 +26,7 @@ status_t _ZN7android19GraphicBufferMapper6unlockEPK13native_handle(void* thisptr
                                                                    buffer_handle_t handle) {
     android::base::unique_fd outFence;
     auto* gpm = static_cast<android::GraphicBufferMapper*>(thisptr);
-    status_t status = gpm->unlock(handle, &outFence);
+    status_t status = gpm->unlock(handle);
     if (status == android::OK && outFence.get() >= 0) {
         sync_wait(outFence.get(), -1);
         outFence.reset();
