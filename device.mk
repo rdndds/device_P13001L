@@ -113,16 +113,15 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
 
-#  (IMS)
+# IMS
 PRODUCT_BOOT_JARS += \
-    mediatek-carrier-config-manager \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
     mediatek-ims-common \
     mediatek-telecom-common \
     mediatek-telephony-base \
-    mediatek-telephony-common2
+    mediatek-telephony-common
 
 # IMS
 PRODUCT_COPY_FILES += \
