@@ -78,3 +78,59 @@ prebuilt_etc {
     src: "etc/ueventd.mtk.rc",
     vendor: true
 }
+
+prebuilt_etc {
+    name: "init_connectivity.rc",
+    src: "etc/init/hw/init_connectivity.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.mt6789.power.rc",
+    src: "etc/init/hw/init.mt6789.power.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.connectivity.common.rc",
+    src: "etc/init/hw/init.connectivity.common.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.modem.rc",
+    src: "etc/init/hw/init.modem.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.mtkgki.rc",
+    src: "etc/init/hw/init.mtkgki.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.project.rc",
+    src: "etc/init/hw/init.project.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.sensor_2_0.rc",
+    src: "etc/init/hw/init.sensor_2_0.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+sh_binary {
+    name: "init.insmod.sh",
+    src: "bin/init.insmod.sh",
+    vendor: true
+}
+
