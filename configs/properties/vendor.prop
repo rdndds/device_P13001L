@@ -199,7 +199,7 @@ ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.has_HDR_display=false
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=6
-ro.surface_flinger.primary_display_orientation=ORIENTATION_0
+ro.surface_flinger.primary_display_orientation=ORIENTATION_90
 ro.surface_flinger.protected_contents=true
 vendor.debug.sf.cpupolicy=0
 vendor.debug.sf.cpupolicy.base_min_bl=310
@@ -237,3 +237,11 @@ ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi
 ro.vendor.wlan.gen=gen4m_6789
+
+# Tell SurfaceFlinger that the panel’s natural orientation is 90°
+ro.surface_flinger.primary_display_orientation=ORIENTATION_90
+
+# Make SurfaceFlinger forward that value to InputReader
+debug.sf.ignore_hwc_physical_display_orientation=true
+
+ro.minui.default_rotation=ROTATION_RIGHT
