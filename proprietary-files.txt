@@ -540,8 +540,8 @@ system_ext/etc/init/kpoc_charger.rc
 system_ext/lib64/libshowlogo.so
 
 # EngineerMode
--system_ext/lib/libem_support_jni.so
--system_ext/lib64/libem_support_jni.so
+system_ext/lib/libem_support_jni.so
+system_ext/lib64/libem_support_jni.so
 system_ext/app/EngineerMode/EngineerMode.apk
 
 # Ladder
