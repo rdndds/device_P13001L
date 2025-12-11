@@ -29,3 +29,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=P13001L \
     SystemDevice=P13001L \
     SystemName=P13001L
+
+PERF_ANIM_OVERRIDE := true
+WITH_GMS := false
+
+# Time
+LINEAGE_VERSION_APPEND_TIME_OF_DAY := true

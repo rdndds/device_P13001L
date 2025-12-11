@@ -33,9 +33,6 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    # From common
-    # 'system_ext/lib64/libimsma.so': blob_fixup()
-    #     .replace_needed('libsink.so', 'libsink-mtk.so'),
     'system_ext/bin/kpoc_charger': blob_fixup()
         .add_needed('libbinder_shim.so'),
     'system_ext/lib64/libsource.so': blob_fixup()
@@ -43,8 +40,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b': blob_fixup()
         .add_needed('libstagefright_foundation-v33.so')
         .replace_needed('libavservices_minijail_vendor.so', 'libavservices_minijail.so'),
-    'vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service': blob_fixup()
-        .replace_needed('android.hardware.power-V2-ndk_platform.so', 'android.hardware.power-V2-ndk.so'),
     'vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc': blob_fixup()
         .regex_replace('@1.2-mediatek', '@1.2-mediatek-64b'),
     'vendor/lib64/hw/audio.primary.mediatek.so': blob_fixup()

@@ -1,0 +1,15 @@
+# Camera
+cam.egnsavefile.enable              u:object_r:exported_system_prop:s0
+debuglog.drv                        u:object_r:exported_system_prop:s0
+debuglog.drv.                       u:object_r:exported_system_prop:s0
+jpeg.exif.icc.profile               u:object_r:exported_system_prop:s0
+st_repair.debug.                    u:object_r:exported_system_prop:s0
+st.superresloution.gpu.level        u:object_r:exported_system_prop:s0
+# Fingerprint
+gf.debug.                                   u:object_r:vendor_fingerprint_prop:s0
+
+# Hardware
+ro.hardware.chipname                        u:object_r:exported_default_prop:s0
+
+# SVN
+ro.product.svn                              u:object_r:build_prop:s0

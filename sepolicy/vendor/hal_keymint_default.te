@@ -1,1 +1,2 @@
-allow hal_keymint_default tkcore_admin_device:chr_file rw_file_perms;
+# Allow Keymint to set MTK TEEI Props
+set_prop(hal_keymint_default, vendor_mtk_soter_teei_prop)
