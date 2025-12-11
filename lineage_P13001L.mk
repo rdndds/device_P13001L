@@ -31,6 +31,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=P13001L
 
 PERF_ANIM_OVERRIDE := true
+
 WITH_GMS := false
 
 # Time

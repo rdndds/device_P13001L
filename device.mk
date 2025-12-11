@@ -229,7 +229,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.0.vendor \
     android.hardware.neuralnetworks@1.3.vendor \
-    libtextclassifier_hash.ve
+    libtextclassifier_hash.vendor
 
 # Lights
 PRODUCT_PACKAGES += \
