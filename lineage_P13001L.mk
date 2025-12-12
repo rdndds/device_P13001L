@@ -24,8 +24,11 @@ PRODUCT_GMS_CLIENTID_BASE := android-transsion
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="sys_mssi_t_64_cn_armv82-user 14 UP1A.231005.007 1728750305 release-keys" \
-    BuildFingerprint=Itel/P13001L-GL/P13001L:14/UP1A.231005.007/1728750305:user/release-keys \
-    DeviceName=P13001L \
-    DeviceProduct=P13001L \
-    SystemDevice=P13001L \
-    SystemName=P13001L
+    BuildFingerprint=Itel/P13001L-GL/P13001L:14/UP1A.231005.007/1728750305:user/release-keys
+
+PERF_ANIM_OVERRIDE := true
+
+WITH_GMS := false
+
+# Time
+LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
