@@ -158,7 +158,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.itel
+    android.hardware.light-service.lineage
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -216,8 +216,6 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek
-
-$(call soong_config_set,mediatek_power,powerhal_ext,//$(LOCAL_PATH):libpowermode-ext-itel)
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/perf,$(TARGET_COPY_OUT_VENDOR)/etc)
